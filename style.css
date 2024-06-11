@@ -51,10 +51,7 @@ header h1 {
 }
 
 .information a {
-    border: 3px solid #333;
-    border-radius: 5px;
-    padding: 10px 5px 0px 5px;
-    line-height: 3em;
+    line-height: 2em;
 }
 
 .menu h2 {
@@ -83,8 +80,26 @@ footer {
     background-color: black;
 }
 
-footer p{
+footer p {
     color: white;
     font-size: 10px;
     text-align: center;
+}
+
+a {
+    position: relative;
+}
+
+a::after {
+    position: absolute;
+    bottom: 3px;
+    right: -20px;
+    transform: rotate(-30deg);
+    display: block;
+    width: 20px; /* アイコンのサイズに合わせる */
+    height: 20px; /* アイコンのサイズに合わせる */
+    content: "";
+    background-image: url("link.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* アイコンのサイズに合わせる */
 }
