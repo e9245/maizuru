@@ -103,3 +103,18 @@ a::after {
     background-repeat: no-repeat;
     background-size: contain; /* アイコンのサイズに合わせる */
 }
+
+h2 a::after{
+    position: absolute;
+    bottom: 3px;
+    right: -20px;
+    transform: rotate(-30deg);
+    display: block;
+    width: 20px; /* アイコンのサイズに合わせる */
+    height: 20px; /* アイコンのサイズに合わせる */
+    content: "";
+    background-image: url("link.png");
+    filter: invert(100%);
+    background-repeat: no-repeat;
+    background-size: contain; /* アイコンのサイズに合わせる */
+}
